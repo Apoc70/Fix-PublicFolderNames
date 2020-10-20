@@ -27,6 +27,42 @@ Exchange Server name hosting legacy public folders
 
 Rename and trim public folders found on Server MYPFSERVER
 
+# Fix-MdernPublicFolderNames.ps1
+
+Script to prepare on-premises modern public folder names for migration to modern public folders in Exchange Online
+
+## Description
+
+This script renames modern public folder names an replaces unsupported characters with the hyphen "-" character.
+
+This script trims public folder names to remove any leading or trailing spaces.
+
+## Requirements
+
+- Windows Server Windows Server 2012R2 or newer
+- Exchange 2013 Management Shell or newer
+- Organization Management RBAC Management Role (let's keep it simple)
+
+## Parameters
+
+### ExportFolderNames
+
+Switch to export renamed folders to text files
+
+## Examples
+
+``` PowerShell
+.\Fix-ModernPublicFolderName
+```
+
+Rename and trim public folders
+
+``` PowerShell
+.\Fix-ModernPublicFolderNames -ExportFolderNames
+```
+
+Rename and trim public folders, export list of renamed folders and folders with renaming errors as text file
+
 ## Note
 
 THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE
