@@ -27,7 +27,7 @@ Exchange Server name hosting legacy public folders
 
 Rename and trim public folders found on Server MYPFSERVER
 
-# Fix-MdernPublicFolderNames.ps1
+# Fix-ModernPublicFolderNames.ps1
 
 Script to prepare on-premises modern public folder names for migration to modern public folders in Exchange Online
 
