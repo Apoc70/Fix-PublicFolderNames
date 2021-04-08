@@ -35,12 +35,12 @@
     .EXAMPLE
     Rename and trim public folders
 
-    .\Fix-ModernPublicFolderNames 
+    .\Fix-ModernPublicFolderNames.ps1 
 
     .EXAMPLE
-    Rename and trim public folders, export list of renamed folders and folders with renaming errors as text file
+    Rename and trim public folders, export list of renamed folders and folders with renaming errors as text files
 
-    .\Fix-ModernPublicFolderNames -ExportFolderNames
+    .\Fix-ModernPublicFolderNames.ps1 -ExportFolderNames
 
 #>
 
